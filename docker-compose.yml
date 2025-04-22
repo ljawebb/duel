@@ -1,0 +1,13 @@
+services:
+
+  data-processing:
+    build: ./data_processing
+    restart: always
+    ports:
+      - "5000:5000"
+
+  data-visualization:
+    build: ./data_visualization
+    restart: always
+    ports:
+      - "4200:4200"
